@@ -987,13 +987,12 @@ header.header_Image{
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 20px 50px;
 }
 .footer1 {
     display: flex;
     align-items: center;
     color: #5f6368;
-    padding-left: 50px;
 }
 .footer2 {
     display: flex;
@@ -1011,7 +1010,7 @@ header.header_Image{
     cursor: pointer;
 }
 .footer2 a:last-child {
-    padding-right: 50px;
+    padding-right: 0;
 }
 
 .form-warning {
@@ -1030,7 +1029,6 @@ header.header_Image{
         font-size: 12px;
     }
     .footer1 {
-        margin-bottom: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
