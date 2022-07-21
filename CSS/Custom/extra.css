@@ -726,9 +726,30 @@ header.header_Image{
     color: #212529;
     text-transform: uppercase;
 }
+.t-container{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+.t-box {
+    border: 1px solid green;
+    width: 250px;
+}
 .t-member {
     margin-bottom: 30px;
     display: block;
+    border: 1px solid rgb(22, 23, 22);
+    padding: 8px 0;
+}
+.t-member:hover {
+    border: none;
+    outline: none;
+    background-color: #c8d3d5;
+    transition: all 0.4s ease-in;
+    cursor: default;
+    box-shadow: 0.5px 0.5px 5px rgb(219, 216, 216);
+    border-radius: 4px;
+    padding: 8px 0;
 }
 .t-member img {
     border: 5px solid rgb(196, 188, 188);
@@ -870,7 +891,9 @@ header.header_Image{
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
 }
-
+.contact-icons .contact-is {
+    margin-left: 15px;
+}
 .contact-icons span{
     text-align: left;
     margin: 0 0 0 8px;
