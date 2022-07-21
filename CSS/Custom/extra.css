@@ -1000,7 +1000,7 @@ header.header_Image{
     cursor: default;
 }
 .footer2 a {
-    padding-right: 20px;
+    padding: 0px 10px 0 10px;
     text-decoration: none;
     color: #5f6368;
     cursor: default;
@@ -1009,9 +1009,9 @@ header.header_Image{
     color: #1a73e8;
     cursor: pointer;
 }
-.footer2 a:last-child {
+/* .footer2 a:last-child {
     padding-right: 0;
-}
+} */
 
 .form-warning {
     color: rgb(255, 255, 255);
@@ -1042,7 +1042,7 @@ header.header_Image{
         align-items: center;
         transition: all 0.3s ease;
     }
-    .footer2 a:last-child {
+    /* .footer2 a:last-child {
         padding-right: 0;
-    }
+    } */
 }
