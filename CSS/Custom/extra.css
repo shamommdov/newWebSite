@@ -353,14 +353,14 @@ header.header_Image{
     header.header_Image{
         padding-top: 100px;
         padding-bottom: 200px;
-        height: 650px;
+        height: 750px;
         z-index: 0;
     }
     .image_sub{
         color: white;
         font-size: 15px;
         font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: 5px;
+        margin: 100px 0 5px 0;
         font-style: italic;
         z-index: 0;
     }
