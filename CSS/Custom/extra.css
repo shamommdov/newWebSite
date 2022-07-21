@@ -789,15 +789,14 @@ header.header_Image{
 }
 .logos-div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid red;
 }
 .logo-box {
     display: flex;
     justify-content: center;
     width: 100%;
     max-width: 130px;
-    border: 1px solid yellow;
 }
 .partner-icons {
     height: 90px;
@@ -812,7 +811,7 @@ header.header_Image{
         display: flex;
         justify-content: center;
         width: 100%;
-        max-width: 100px;
+        max-width: 80px;
     }
     .partner-icons {
         height: 50px;
@@ -824,6 +823,10 @@ header.header_Image{
     .partner-icons {
         height: 30px;
         transition: all 0.3s ease-in;
+    }
+    .logo-box{
+        width: 100%;
+        max-width: 50px;
     }
 }
 
