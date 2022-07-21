@@ -1,9 +1,9 @@
 
 /* CSS Folder */
-@import url(/firstPROJECT/CSS/bootstrap/bootstrap.min.css);
-@import url(/firstPROJECT/CSS/bootstrap/bootstrap.min.css.map);
+@import url(/newPROJECT/CSS/bootstrap/bootstrap.min.css);
+@import url(/newPROJECT/CSS/bootstrap/bootstrap.min.css.map);
 
-/* @import url(/firstPROJECT/CSS/Custom/extra.css); */
+@import url(/newPROJECT/CSS/Custom/extra.css);
 
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
