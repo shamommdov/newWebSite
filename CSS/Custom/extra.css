@@ -787,11 +787,11 @@ header.header_Image{
         max-width: 200px;
         padding: 0;
         margin-bottom: 15px;
+        height: 220px;
     }
     .t-member {
         margin-bottom: 30px;
         display: block;
-        padding: 6px 0;
         margin: 0;
     }
     .btn-social {
@@ -818,9 +818,7 @@ header.header_Image{
     .t-member {
         margin-bottom: 30px;
         display: block;
-        padding: 6px 0;
         margin: 0;
-        border: 1px solid red;
     }
     .btn-social {
         width: 22px;
