@@ -819,7 +819,7 @@ header.header_Image{
 
 @media (max-width: 450px) {
     .partner-icons {
-        height: 40px;
+        height: 30px;
         transition: all 0.3s ease-in;
     }
 }
