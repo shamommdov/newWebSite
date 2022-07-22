@@ -77,26 +77,33 @@ header.header_Image{
 
 .container{
     position: relative;
-    position: relative;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    border: 1px solid yellow;
 }
-
+.inform {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
 .image_sub{
     color: white;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 5px;
     font-style: italic;
+    border: 1px solid rgb(230, 218, 218);
 }
-
 .image_heading{
     color: white;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    border: 1px solid red;
 }
 
 .bttn {
@@ -729,19 +736,16 @@ header.header_Image{
 .t-container{
     display: flex;
     justify-content: center;
-    border: 1px solid black;
 }
 .t-box {
 
     width: 100%;
     max-width: 250px;
-    border: 1px solid red;
 }
 .t-member {
     margin-bottom: 30px;
     display: block;
     padding: 8px 0;
-    border: 1px solid yellow;
 }
 .t-member:hover {
     border: none;
