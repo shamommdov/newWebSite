@@ -33,7 +33,6 @@ body{
     border: none;
     outline: none;
 }
-
 .menyu-list {
     padding: 0;
     margin: 0;
@@ -63,8 +62,41 @@ body{
     color: #fa836a;
 }
 
+@media (min-width: 752px) {
 
-/* ------------------------------------------------------Hearder Foto Side --------------------------------------------  */
+    .nav_bar{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        border: none;
+        background-color: transparent;
+        transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        -webkit-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        -moz-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        -ms-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        -o-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        position: fixed;
+        top: 0;
+    }
+    .logo{
+        font-size: 18px;
+        transition: font-size 0.3s ease-in-out;
+        -webkit-transition: font-size 0.3s ease-in-out;
+        -moz-transition: font-size 0.3s ease-in-out;
+        -ms-transition: font-size 0.3s ease-in-out;
+        -o-transition: font-size 0.3s ease-in-out;
+    }
+    #mainNavbar.navBarScroll .logo{
+        font-size: 16px;
+    }
+    #mainNavbar.navBarScroll {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        background-color: #212529;
+        z-index: 100;
+    }
+}
+
+/* ----------------Hearder Foto Side --------------------------------------------  */
 header.header_Image{
     background-image: url(../../img/header.png);
     background-repeat: no-repeat;
@@ -74,14 +106,12 @@ header.header_Image{
     height: 750px;
     margin: 0;
 }
-
 .container{
     position: relative;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    border: 1px solid yellow;
 }
 .inform {
     color: white;
@@ -96,16 +126,13 @@ header.header_Image{
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 5px;
     font-style: italic;
-    border: 1px solid rgb(230, 218, 218);
 }
 .image_heading{
     color: white;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 15px;
-    border: 1px solid red;
 }
-
 .bttn {
     position: relative;
     width: 120px;
@@ -144,7 +171,6 @@ header.header_Image{
     opacity: 1;
     right: 0;
 }
-
 .burger{
     display: none;
     cursor: pointer;
@@ -159,11 +185,54 @@ header.header_Image{
     margin: 5px auto;
 }
 
-/* ---------------------------------------------------------- Services ------------------------------------------------- */
+@media (max-width: 750.98px) {
+    header.header_Image{
+        padding-top: 100px;
+        padding-bottom: 200px;
+        height: 750px;
+        background-position: center center;
+        background-size: cover;
+        z-index: 0;
+    }
+    .image_sub{
+        color: white;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        z-index: 0;
+    }
+    .inform {
+        color: white;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0;
+        margin: 60px 0 40px 0;
+    }
+    .image_heading{
+        color: white;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+        z-index: 0;
+    }
+}
+
+@media (min-width: 752px) {
+    header.header_Image{
+        padding-top: 200px;
+        padding-bottom: 200px;
+        transition: all 0.3s ease;
+    }
+}
+
+/* ------------- Services ------------------------------- */
 .mySection {
-    background-color: #5d98a4;
+    background-color: #e9f1f3;
+    border-top: 2px solid white;
     width: 100%;
-    margin: 0;
+}
+#services {
+    padding-bottom: 30px;
 }
 .servis-container{
     border-top: 1px solid white;
@@ -239,14 +308,25 @@ header.header_Image{
     transition: all 0.5s ease-in-out;
 }
 
+@media (max-width: 750.98px) {
+
+    .row-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-box1{
+        width: 70%;
+        text-align: center;
+    }
+}
+
 
 /* ---------------------------------------------------------- Portfolio ------------------------------------------------- */
 
 .portfolio-container{
-    border-top: 1px solid white;
     background-color: #e9f1f3;
     position: relative;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 .portfolio-header .portfolio{
     position: relative;
@@ -320,7 +400,7 @@ header.header_Image{
     cursor: pointer;
 }
 
-/* ----------------------------------------------------- Portfolio Modal ------------------------------------------------- */
+/* -------------------- Portfolio Modal ------------------------------------------------- */
 
 .p-modal{
     max-width: 90%;
@@ -354,30 +434,8 @@ header.header_Image{
 }
 
 
-/* ----------------------------------------------------------Kiçik ekran ------------------------------------------------- */
+/* -----------------------Navbar kiçik ekran ------------------------------------------------- */
 @media (max-width: 750.98px) {
-
-    header.header_Image{
-        padding-top: 100px;
-        padding-bottom: 200px;
-        height: 750px;
-        z-index: 0;
-    }
-    .image_sub{
-        color: white;
-        font-size: 15px;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 100px 0 5px 0;
-        font-style: italic;
-        z-index: 0;
-    }
-    .image_heading{
-        color: white;
-        font-size: 25px;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: 10px;
-        z-index: 0;
-    }
     .burger{
         display: block;
         cursor: pointer;
@@ -400,12 +458,6 @@ header.header_Image{
         margin: 0;
         padding: 0;
     }
-    /* .empty{
-        display: flex;
-        width: 250px;
-        margin: 0;
-        padding: 0;
-    } */
     .menyu-div{
         position: absolute;
         background-color: rgb(102, 106, 105);
@@ -436,7 +488,6 @@ header.header_Image{
         margin: 0;
         padding: 0;
         width: 100%;
-        
     }
     .menyu-list::-webkit-scrollbar {
         width: 8px;
@@ -484,66 +535,13 @@ header.header_Image{
         background-color: #212529;
         z-index: 100;
     }
-    .row-box{
-        display: flex;
-        flex-direction: column;
-    }
-    .logo-box1{
-        width: 70%;
-        text-align: center;
-    }
-}
-
-
-
-
-
-
-/* ----------------------------------------------------------Böyük ekran ------------------------------------------------- */
-@media (min-width: 752px) {
-    header.header_Image{
-        padding-top: 200px;
-        padding-bottom: 200px;
-        transition: all 0.3s ease;
-    }
-    .nav_bar{
-        padding-top: 30px;
-        padding-bottom: 20px;
-        border: none;
-        background-color: transparent;
-        transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
-        -webkit-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
-        -moz-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
-        -ms-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
-        -o-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
-        position: fixed;
-        top: 0;
-    }
-    .logo{
-        font-size: 18px;
-        transition: font-size 0.3s ease-in-out;
-        -webkit-transition: font-size 0.3s ease-in-out;
-        -moz-transition: font-size 0.3s ease-in-out;
-        -ms-transition: font-size 0.3s ease-in-out;
-        -o-transition: font-size 0.3s ease-in-out;
-    }
-    #mainNavbar.navBarScroll .logo{
-        font-size: 16px;
-    }
-    #mainNavbar.navBarScroll {
-        padding-top: 18px;
-        padding-bottom: 18px;
-        background-color: #212529;
-        z-index: 100;
-    }
 }
 
 
 /* ------------ About ----------------------------------- */
-.mySection {
-    background-color: #e9f1f3;
-    border-top: 1px solid white;
-    padding: 0 0 70px 0;
+
+#about {
+    padding-bottom: 90px;
 }
 .about-text{
     font-size: 12px;
@@ -711,10 +709,9 @@ header.header_Image{
 }
 
 /*------------------  Team ---------------------*/
-.mySection {
-    background-color: #e9f1f3;
-    border-top: 2px solid white;
-    padding: 0 0 70px 0;
+
+#team{
+    padding-bottom: 55px;
 }
 .team-text {
     font-size: 12px;
@@ -845,10 +842,9 @@ header.header_Image{
 
 
 /* ---------partners --------- */
-.mySection {
-    background-color: #e9f1f3;
-    border-top: 2px solid white;
-    padding: 0 0 60px 0;
+
+#partner {
+    padding-bottom: 55px;
 }
 .partner-text {
     font-size: 12px;
