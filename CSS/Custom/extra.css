@@ -622,6 +622,11 @@ header.header_Image{
 .timeline .t-body > p{
     margin-bottom: 0;
 }
+.t-image:hover {
+    box-shadow: 1px 1.5px 12px rgb(128, 120, 120);
+    transform: scale(1.03);
+    cursor: default;
+}
 
 @media (min-width: 740px) {
     .timeline:before{
