@@ -57,22 +57,27 @@ function formFunctions(){
         if(myName.value.length == 0){
             myName.classList.remove("is-valid");
             myName.classList.add("is-invalid");
-            errName.innerHTML = "Ad sahəsi boş buraxıla bilməz";
+            errName.innerHTML = "The name field cannot be empty";
             return false;
         }else if (myName.value.length < 3){
             myName.classList.remove("is-valid");
             myName.classList.add("is-invalid");
-            errName.innerHTML = "Ad minimum dörd hərfdən ibarət olmalıdır";
+            errName.innerHTML = "The name must contain at least four letters";
             return false;
-        }else if(spacePattern.test(myName.value) == false || NumericPattern.test(myName.value) == false){
+        }else if(spacePattern.test(myName.value) == false){
             myName.classList.remove("is-valid");
             myName.classList.add("is-invalid");
-            errName.innerHTML = "Ad sahəsi minimum üç və yalnız hərflərdən ibarət olmalıdır";
+            errName.innerHTML = "A space cannot be used in the name field";
+            return false;
+        }else if(NumericPattern.test(myName.value) == false){
+            myName.classList.remove("is-valid");
+            myName.classList.add("is-invalid");
+            errName.innerHTML = "The name field must contain only letters";
             return false;
         }else if (myName.value.length > 30){
             myName.classList.remove("is-valid");
             myName.classList.add("is-invalid");
-            errName.innerHTML = "Ad otuz hərfdən çox ola bilməz";
+            errName.innerHTML = "The name cannot exceed thirty letters";
             return false;
         }else {
             myName.classList.add("is-valid");
@@ -87,22 +92,28 @@ function formFunctions(){
         if(myLastName.value.length == 0){
             myLastName.classList.remove("is-valid");
             myLastName.classList.add("is-invalid");
-            errLastName.innerHTML = "Soyad sahəsi boş buraxıla bilməz";
+            errLastName.innerHTML = "The last name field cannot be empty";
             return false;
         }else if (myLastName.value.length < 3){
             myLastName.classList.remove("is-valid");
             myLastName.classList.add("is-invalid");
-            errLastName.innerHTML = "Soyad minimum dörd hərfdən ibarət olmalıdır";
+            errLastName.innerHTML = "The last name must contain at least four letters";
             return false;
-        }else if(spacePattern.test(myLastName.value) == false || NumericPattern.test(myLastName.value) == false){
+        }else if(spacePattern.test(myLastName.value) == false){
             myLastName.classList.remove("is-valid");
             myLastName.classList.add("is-invalid");
-            errLastName.innerHTML = "Soyad sahəsində boşluqdan və rəqəmdən istifadə edilə bilməz";
+            errLastName.innerHTML = "A space cannot be used in the last name field";
             return false;
-        }else if (myLastName.value.length > 30){
+        }else if(NumericPattern.test(myLastName.value) == false) {
             myLastName.classList.remove("is-valid");
             myLastName.classList.add("is-invalid");
-            errLastName.innerHTML = "Soyad otuz hərfdən çox ola bilməz";
+            errLastName.innerHTML = "The last name field must contain only letters";
+            return false;
+        }
+        else if (myLastName.value.length > 30){
+            myLastName.classList.remove("is-valid");
+            myLastName.classList.add("is-invalid");
+            errLastName.innerHTML = "The last name cannot exceed thirty letters";
             return false;
         }else {
             myLastName.classList.add("is-valid");
@@ -117,17 +128,17 @@ function formFunctions(){
         if(myEmail.value.length == 0){
             myEmail.classList.remove("is-valid");
             myEmail.classList.add("is-invalid");
-            errEmail.innerHTML = "E-mail sahəsi boş buraxıla bilməz";
+            errEmail.innerHTML = "The E-mail field cannot be empty";
             return false;
         }else if(spacePattern.test(myEmail.value) == false){
             myEmail.classList.remove("is-valid");
             myEmail.classList.add("is-invalid");
-            errEmail.innerHTML = "E-mail sahəsində boşluqdan istifadə edilə bilməz";
+            errEmail.innerHTML = "A space cannot be used in the E-mail field";
             return false;
         }else if (EmailPattern.test(myEmail.value) == false){
             myEmail.classList.remove("is-valid");
             myEmail.classList.add("is-invalid");
-            errEmail.innerHTML = "E-maildə @ işarəsi və ya @ işarəsindən sonrakı'nöktə' unudulub və ya 'İnternet domain (exp: .com)' düzgün yazılmayıb";
+            errEmail.innerHTML = "Email format is not correct (Exp: example@gmail.com)";
             return false;
         }
         else{
@@ -143,22 +154,22 @@ function formFunctions(){
         if(myPhone.value.length == 0){
             myPhone.classList.remove("is-valid");
             myPhone.classList.add("is-invalid");
-            errPhone.innerHTML = "Telefon sahəsi boş buraxıla bilməz";
+            errPhone.innerHTML = "The phone field cannot be empty";
             return false;
         }else if(spacePattern.test(myPhone.value) == false) {
             myPhone.classList.remove("is-valid");
             myPhone.classList.add("is-invalid");
-            errPhone.innerHTML = "Telefon sahəsində boşluq ola bilməz";
+            errPhone.innerHTML = "A space cannot be used in the phone field";
             return false;
         }else if(OnlyNumberPattern.test(myPhone.value) == false) {
             myPhone.classList.remove("is-valid");
             myPhone.classList.add("is-invalid");
-            errPhone.innerHTML = "Telefon nömrəsi yalnız ədədlərdən ibarət olmalıdır";
+            errPhone.innerHTML = "The phone field must contain only numbers";
             return false;
         }else if(myPhone.value.length <=9){
             myPhone.classList.remove("is-valid");
             myPhone.classList.add("is-invalid");
-            errPhone.innerHTML = "Telefon sahəsində rəqəmlərin sayı 10-dan az ola bilməz";
+            errPhone.innerHTML = "The number of digits in the phone field cannot be less than 10";
             return false;
         }else {
             myPhone.classList.add("is-valid");
@@ -173,12 +184,12 @@ function formFunctions(){
         if(myMessage.value.length == 0){
             myMessage.classList.remove("is-valid");
             myMessage.classList.add("is-invalid");
-            errMessage.innerHTML = "Mesaj sahəsi boş buraxıla bilməz";
+            errMessage.innerHTML = "The textarea field cannot be empty";
             return false;
         }else if(myMessage.value.length <= 9){
             myMessage.classList.remove("is-valid");
             myMessage.classList.add("is-invalid");
-            errMessage.innerHTML = "Mesaj sahəsində minimum 10 simvoldan ibarət bir mətn olmalıdır";
+            errMessage.innerHTML = "The message field must contain a text of at least 10 characters";
             return false;
         }else {
             myMessage.classList.add("is-valid");
@@ -191,7 +202,7 @@ function formFunctions(){
     myMessage.addEventListener("keyup", function(){
         textAreaCharacter.textContent = myMessage.value.length;
 
-        if(myMessage.value.length >= 10){
+        if(myMessage.value.length >= 10 && myName.value.length != 0 && myLastName.value.length != 0 && myEmail.value.length != 0 && myPhone.value.length != 0){
             submitButton.disabled = false;
             submitButton.classList.add("send-button");
             sendKey.classList.add("sendKey");
