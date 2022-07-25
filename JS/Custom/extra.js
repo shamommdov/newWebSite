@@ -237,6 +237,18 @@ formFunctions();
 formFunctions();
 
 
+// 
+const colorStyle = document.querySelector("#colorStyle");
+const color_array = [
+    "darkred", "green", "blue", "orange", "#fcba03", "#fc1803", "#b1fc03", "#56fc03", "#829fa1","#5fadb3", "#766bb5", "#905c9c", "#bd828b", "#203633", "#a99db0", "#b0a69d", "#66605b", "#cf7932", "#d2e077", "#3a4205", "#250542", "#9269d1", "#948646", "#944646", "#f29191", "#452211", "#451111", "#d3e7f2", "#89959c", "#395361", "#d8daed", "#0066ff", "#cc6600", "#333300", "#993399"
+];
+window.onload = function(){
+    setInterval(function(){
+        let randomColor = Math.floor(Math.random() * color_array.length + 1);
+        let txtColor = color_array[randomColor];
+        colorStyle.style.color = txtColor;
+    }, 500);
+}
 
 
 

@@ -133,6 +133,9 @@ header.header_Image{
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 15px;
 }
+#colorStyle {
+    transition: all 0.6s ease-in-out;
+}
 .bttn {
     position: relative;
     width: 120px;
