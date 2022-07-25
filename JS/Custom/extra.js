@@ -186,7 +186,7 @@ function formFunctions(){
             myMessage.classList.add("is-invalid");
             errMessage.innerHTML = "The textarea field cannot be empty";
             return false;
-        }else if(myMessage.value.length <= 9){
+        }else if(myMessage.value.length >= 10){
             myMessage.classList.remove("is-valid");
             myMessage.classList.add("is-invalid");
             errMessage.innerHTML = "The message field must contain a text of at least 10 characters";
@@ -202,7 +202,7 @@ function formFunctions(){
     myMessage.addEventListener("keyup", function(){
         textAreaCharacter.textContent = myMessage.value.length;
 
-        if(myMessage.value.length >= 10 && myName.value.length != 0 && myLastName.value.length != 0 && myEmail.value.length != 0 && myPhone.value.length != 0){
+        if(myMessage.value.length >= 10){
             submitButton.disabled = false;
             submitButton.classList.add("send-button");
             sendKey.classList.add("sendKey");
@@ -223,6 +223,12 @@ function formFunctions(){
             {
                 e.preventDefault();
                 e.stopPropagation();
+
+                submitButton.disabled = false;
+                submitButton.classList.add("send-button");
+                sendKey.classList.add("sendKey");
+                submitButton.classList.remove("button-disable");
+                sendKey.classList.remove("sendKey1");
             }
         }, false);
     });
