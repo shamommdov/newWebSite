@@ -134,7 +134,7 @@ header.header_Image{
     margin-bottom: 15px;
 }
 #colorStyle {
-    transition: all 0.6s ease-in-out;
+    transition: all 1s ease-in;
 }
 .bttn {
     position: relative;
@@ -938,7 +938,7 @@ header.header_Image{
 
 #contact {
     /* background-image: url(/WEBSITE//img/contact/map.png); */
-    background-image: url(/WEBSITE//img/contact/map.png);
+    background-image: url(/img/header.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #3f373a;
