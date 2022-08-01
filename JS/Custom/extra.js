@@ -200,7 +200,7 @@ function formFunctions(){
             myMessage.classList.add("is-invalid");
             errMessage.innerHTML = "The textarea field cannot be empty";
             return false;
-        }else if(myMessage.value.length >= 10){
+        }else if(myMessage.value.length <= 9){
             myMessage.classList.remove("is-valid");
             myMessage.classList.add("is-invalid");
             errMessage.innerHTML = "The message field must contain a text of at least 10 characters";
@@ -232,7 +232,7 @@ function formFunctions(){
 
         let myForm = document.querySelector(".needs-validations");
         myForm.addEventListener("submit", function(e){
-            if(myForm.checkValidity() == false || controlName() == false || controlLastName() == false ||
+            if(controlName() == false || controlLastName() == false ||
                 controlEmail() == false || controlPhone() == false || controlMessage() == false) 
             {
                 e.preventDefault();
