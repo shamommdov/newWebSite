@@ -248,4 +248,3 @@ function formFunctions(){
     });
 };
 formFunctions();
-formFunctions();
