@@ -21,7 +21,7 @@ body{
     align-items: center;
 }
 .logo-div .logo {
-    color: #fa836a;
+    color: #faf36a;
     letter-spacing: 1px;
     font-weight: 700;
     text-decoration: none;
@@ -97,7 +97,7 @@ body{
 }
 
 /* ----------------Hearder Foto Side --------------------------------------------  */
-header.header_Image{
+header.header_Image {
     background-image: url(../../img/header.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
